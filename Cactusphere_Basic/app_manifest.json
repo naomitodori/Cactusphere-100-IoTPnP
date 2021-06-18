@@ -1,0 +1,16 @@
+{
+  "SchemaVersion": 1,
+  "Name": "Cactusphere_Basic",
+  "ComponentId": "ef2b003b-4170-04a2-03ad-565a73976e83",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "--ConnectionType", "PnP", "--ScopeID", "" ],
+  "Capabilities": {
+    "AllowedConnections": [ "global.azure-devices-provisioning.net"],
+    "Gpio": [ "$MT3620_GPIO8", "$MT3620_GPIO12" ],
+    "I2cMaster": [ "$MT3620_ISU1_I2C" ],
+    "DeviceAuthentication": "00000000-0000-0000-0000-000000000000",
+    "NetworkConfig": true,
+    "HardwareAddressConfig": true
+  },
+  "ApplicationType": "Default"
+}
